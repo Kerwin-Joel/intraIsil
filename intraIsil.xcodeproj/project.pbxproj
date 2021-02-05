@@ -27,7 +27,6 @@
 		AF699D5225CD7D7E00B4BF27 /* LoginDesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF699D5125CD7D7E00B4BF27 /* LoginDesignableView.swift */; };
 		AF699D5A25CDAD7200B4BF27 /* LoginViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF699D5925CDAD7200B4BF27 /* LoginViewControllerTwo.swift */; };
 		AF699D5E25CDAD8500B4BF27 /* LoginViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF699D5D25CDAD8500B4BF27 /* LoginViewControllerThree.swift */; };
-		AFD36EB725CDEB3F00F7D0E5 /* Imgprofile.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD36EB625CDEB3F00F7D0E5 /* Imgprofile.xcassets */; };
 		AFE71ECF25CD3EE200DA64CB /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFE71ECE25CD3EE200DA64CB /* Montserrat-Bold.ttf */; };
 		AFE71ED225CD3F0200DA64CB /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFE71ED125CD3F0200DA64CB /* Montserrat-SemiBold.ttf */; };
 /* End PBXBuildFile section */
@@ -56,7 +55,6 @@
 		AF699D5125CD7D7E00B4BF27 /* LoginDesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDesignableView.swift; sourceTree = "<group>"; };
 		AF699D5925CDAD7200B4BF27 /* LoginViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTwo.swift; sourceTree = "<group>"; };
 		AF699D5D25CDAD8500B4BF27 /* LoginViewControllerThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerThree.swift; sourceTree = "<group>"; };
-		AFD36EB625CDEB3F00F7D0E5 /* Imgprofile.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Imgprofile.xcassets; path = ../../../../Proyecto/Proyecto/Perfil/Perfil/Resources/Imgprofile.xcassets; sourceTree = "<group>"; };
 		AFE71ECE25CD3EE200DA64CB /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		AFE71ED125CD3F0200DA64CB /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				08ACB50D25CB3E7E005469E9 /* Colors.xcassets */,
-				AFD36EB625CDEB3F00F7D0E5 /* Imgprofile.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -274,7 +271,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				08ACB51525CB47C1005469E9 /* UserOptions.storyboard in Resources */,
-				AFD36EB725CDEB3F00F7D0E5 /* Imgprofile.xcassets in Resources */,
 				08C6ADF725C3A89E00EDA9BC /* LaunchScreen.storyboard in Resources */,
 				08ACB51825CB47E5005469E9 /* Profile.storyboard in Resources */,
 				08C6ADF425C3A89E00EDA9BC /* Assets.xcassets in Resources */,
