@@ -9,21 +9,25 @@ import UIKit
 
 class EnrollmentViewController: UIViewController {
 
+    @IBOutlet weak var TitleLabel: UILabel!
+    @IBOutlet weak var CursosButton: UIButton!
+    @IBOutlet weak var SwitchCursos: UISwitch!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func SwitchAceptarM(_ sender: Any) {
+        if SwitchCursos .isOn == true{
+            TitleLabel.text = "TU MATRICULA A SIDO ACTIVADA"
+            CursosButton.isHidden = false
+        } else {
+            TitleLabel.text = "¿Aceptas el reglamento de matricula?"
+            CursosButton.isHidden = true
+        }
     }
-    */
+    
 
 }
