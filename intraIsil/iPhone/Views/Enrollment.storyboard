@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,16 +16,130 @@
                     <view key="view" contentMode="scaleToFill" id="nmd-6A-1UI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eg8-rB-Iom" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cag-Up-15O">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="grX-2j-YF9"/>
+                                        </constraints>
+                                        <state key="normal" image="arrow.left" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="cag-Up-15O" firstAttribute="top" secondItem="Eg8-rB-Iom" secondAttribute="top" id="ast-JF-Fb7"/>
+                                    <constraint firstAttribute="bottom" secondItem="cag-Up-15O" secondAttribute="bottom" id="fp8-Ca-azS"/>
+                                    <constraint firstItem="cag-Up-15O" firstAttribute="leading" secondItem="Eg8-rB-Iom" secondAttribute="leading" id="qxA-TV-Dfd"/>
+                                    <constraint firstAttribute="height" constant="44" id="yz9-xU-OoK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDZ-gG-mkg" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="796" width="414" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="isilLogo" translatesAutoresizingMaskIntoConstraints="NO" id="zLd-Vv-Ow6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="background.main"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0Qk-Mw-wgh"/>
+                                    <constraint firstItem="zLd-Vv-Ow6" firstAttribute="leading" secondItem="IDZ-gG-mkg" secondAttribute="leading" id="3jv-ST-YLE"/>
+                                    <constraint firstAttribute="trailing" secondItem="zLd-Vv-Ow6" secondAttribute="trailing" id="Ard-CB-BCq"/>
+                                    <constraint firstItem="zLd-Vv-Ow6" firstAttribute="top" secondItem="IDZ-gG-mkg" secondAttribute="top" id="Kyn-Wv-SBn"/>
+                                    <constraint firstAttribute="bottom" secondItem="zLd-Vv-Ow6" secondAttribute="bottom" id="fnE-PO-KDu"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bF8-zK-XKh">
+                                <rect key="frame" x="0.0" y="88" width="414" height="708"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5AR-Af-4dB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="HcT-KC-qXa"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Aceptas el reglamento de matricula?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7q6-zh-NQ0">
+                                        <rect key="frame" x="20" y="30" width="374" height="64.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxb-ZJ-Vic">
+                                        <rect key="frame" x="127.5" y="545" width="159" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Ver Cursos Disponibles">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zg9-BN-cu7">
+                                        <rect key="frame" x="182.5" y="625" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="SwitchAceptarM:" destination="45r-Zw-Cnn" eventType="valueChanged" id="3am-rT-Fat"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDc-v9-nvL">
+                                        <rect key="frame" x="20" y="129.5" width="374" height="365.5"/>
+                                        <mutableString key="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod eu risus sit amet accumsan. Morbi et eleifend purus, vel volutpat ex. Vestibulum dapibus commodo urna, suscipit tincidunt dolor bibendum vel. Vestibulum tincidunt in ante commodo lobortis. In mollis nisi ut libero pharetra vehicula. Morbi non augue vel risus facilisis posuere. Proin in ligula eu massa pretium accumsan. Nulla lacinia sit amet erat non pulvinar. Nullam ac ante ac velit porta consectetur. Vivamus aliquet condimentum massa, in aliquet orci cursus in. Sed at orci sed sapien vulputate tempor nec quis dolor. Maecenas fringilla fringilla consequat. Donec urna nisi, dapibus a justo sed, vehicula cursus justo. Donec at urna lacus. Nam tempus nulla a enim tempus pharetra. Vestibulum pretium nec arcu sed venenatis.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vDc-v9-nvL" firstAttribute="leading" secondItem="7q6-zh-NQ0" secondAttribute="leading" id="15c-cg-v0R"/>
+                                    <constraint firstItem="7q6-zh-NQ0" firstAttribute="leading" secondItem="bF8-zK-XKh" secondAttribute="leading" constant="20" id="2jF-cL-Vvo"/>
+                                    <constraint firstAttribute="trailing" secondItem="5AR-Af-4dB" secondAttribute="trailing" id="4lG-HI-poG"/>
+                                    <constraint firstAttribute="trailing" secondItem="7q6-zh-NQ0" secondAttribute="trailing" constant="20" id="MkM-AN-O5y"/>
+                                    <constraint firstItem="5AR-Af-4dB" firstAttribute="width" secondItem="bF8-zK-XKh" secondAttribute="width" id="Nfp-yF-9dw"/>
+                                    <constraint firstItem="vDc-v9-nvL" firstAttribute="top" secondItem="7q6-zh-NQ0" secondAttribute="bottom" constant="35" id="PSY-rS-tEQ"/>
+                                    <constraint firstItem="5AR-Af-4dB" firstAttribute="top" secondItem="bF8-zK-XKh" secondAttribute="top" id="UI1-kZ-C8F"/>
+                                    <constraint firstItem="dxb-ZJ-Vic" firstAttribute="centerX" secondItem="vDc-v9-nvL" secondAttribute="centerX" id="Udb-nF-Q4l"/>
+                                    <constraint firstItem="dxb-ZJ-Vic" firstAttribute="top" secondItem="vDc-v9-nvL" secondAttribute="bottom" constant="50" id="Xxa-qd-ZPE"/>
+                                    <constraint firstItem="zg9-BN-cu7" firstAttribute="top" secondItem="dxb-ZJ-Vic" secondAttribute="bottom" constant="50" id="c3k-E0-Dek"/>
+                                    <constraint firstItem="zg9-BN-cu7" firstAttribute="centerX" secondItem="dxb-ZJ-Vic" secondAttribute="centerX" id="erS-PO-hni"/>
+                                    <constraint firstItem="vDc-v9-nvL" firstAttribute="trailing" secondItem="7q6-zh-NQ0" secondAttribute="trailing" id="iat-Es-fSw"/>
+                                    <constraint firstAttribute="bottom" secondItem="zg9-BN-cu7" secondAttribute="bottom" constant="40" id="kki-o9-Vnp"/>
+                                    <constraint firstItem="5AR-Af-4dB" firstAttribute="leading" secondItem="bF8-zK-XKh" secondAttribute="leading" id="tjO-t3-NDk"/>
+                                    <constraint firstItem="7q6-zh-NQ0" firstAttribute="top" secondItem="5AR-Af-4dB" secondAttribute="bottom" constant="30" id="wht-Cd-5El"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2ed-xh-AxF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="IDZ-gG-mkg" secondAttribute="bottom" id="B5C-FN-Kzk"/>
+                            <constraint firstItem="IDZ-gG-mkg" firstAttribute="top" secondItem="bF8-zK-XKh" secondAttribute="bottom" id="Hn8-jj-qiO"/>
+                            <constraint firstItem="bF8-zK-XKh" firstAttribute="leading" secondItem="2ed-xh-AxF" secondAttribute="leading" id="Nh9-x6-02I"/>
+                            <constraint firstItem="bF8-zK-XKh" firstAttribute="top" secondItem="Eg8-rB-Iom" secondAttribute="bottom" id="PtT-Gx-CoV"/>
+                            <constraint firstItem="IDZ-gG-mkg" firstAttribute="trailing" secondItem="2ed-xh-AxF" secondAttribute="trailing" id="Svp-VF-I0a"/>
+                            <constraint firstItem="bF8-zK-XKh" firstAttribute="trailing" secondItem="2ed-xh-AxF" secondAttribute="trailing" id="g10-7y-e8V"/>
+                            <constraint firstItem="Eg8-rB-Iom" firstAttribute="trailing" secondItem="2ed-xh-AxF" secondAttribute="trailing" id="iF6-cQ-deV"/>
+                            <constraint firstItem="Eg8-rB-Iom" firstAttribute="top" secondItem="2ed-xh-AxF" secondAttribute="top" id="r9z-IL-KCY"/>
+                            <constraint firstItem="Eg8-rB-Iom" firstAttribute="leading" secondItem="2ed-xh-AxF" secondAttribute="leading" id="vNw-wW-c0t"/>
+                            <constraint firstItem="IDZ-gG-mkg" firstAttribute="leading" secondItem="2ed-xh-AxF" secondAttribute="leading" id="xR7-hj-k5N"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="CursosButton" destination="dxb-ZJ-Vic" id="g72-nA-l6h"/>
+                        <outlet property="SwitchCursos" destination="zg9-BN-cu7" id="Lca-He-ecP"/>
+                        <outlet property="TitleLabel" destination="7q6-zh-NQ0" id="xyh-j1-Lgz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMX-Xz-73f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="252" y="167"/>
+            <point key="canvasLocation" x="250.72463768115944" y="166.74107142857142"/>
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="isilLogo" width="500" height="500"/>
+        <namedColor name="background.main">
+            <color red="0.0" green="0.69199997186660767" blue="0.94999998807907104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
