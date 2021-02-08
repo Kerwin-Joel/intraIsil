@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		08ACB51525CB47C1005469E9 /* UserOptions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ACB51425CB47C1005469E9 /* UserOptions.storyboard */; };
 		08ACB51825CB47E5005469E9 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ACB51725CB47E5005469E9 /* Profile.storyboard */; };
-		08ACB51B25CB480F005469E9 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ACB51A25CB480F005469E9 /* Schedule.storyboard */; };
-		08ACB51E25CB482A005469E9 /* Enrollment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ACB51D25CB482A005469E9 /* Enrollment.storyboard */; };
+		08ACB51B25CB480F005469E9 /* Enrollment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ACB51A25CB480F005469E9 /* Enrollment.storyboard */; };
+		08ACB51E25CB482A005469E9 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ACB51D25CB482A005469E9 /* Schedule.storyboard */; };
 		08ACB53A25CB5300005469E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ACB53925CB5300005469E9 /* LoginViewController.swift */; };
 		08ACB53E25CB5339005469E9 /* UserOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ACB53D25CB5339005469E9 /* UserOptionsViewController.swift */; };
 		08ACB54225CB534B005469E9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ACB54125CB534B005469E9 /* ProfileViewController.swift */; };
@@ -35,8 +35,8 @@
 		08ACB50D25CB3E7E005469E9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = ../../../../../Documents/arquitectura/Sesion06/Sesion06/iPhone/Resources/Colors.xcassets; sourceTree = "<group>"; };
 		08ACB51425CB47C1005469E9 /* UserOptions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserOptions.storyboard; sourceTree = "<group>"; };
 		08ACB51725CB47E5005469E9 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		08ACB51A25CB480F005469E9 /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
-		08ACB51D25CB482A005469E9 /* Enrollment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Enrollment.storyboard; sourceTree = "<group>"; };
+		08ACB51A25CB480F005469E9 /* Enrollment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Enrollment.storyboard; sourceTree = "<group>"; };
+		08ACB51D25CB482A005469E9 /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		08ACB53925CB5300005469E9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		08ACB53D25CB5339005469E9 /* UserOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOptionsViewController.swift; sourceTree = "<group>"; };
 		08ACB54125CB534B005469E9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -112,8 +112,8 @@
 			children = (
 				08ACB51425CB47C1005469E9 /* UserOptions.storyboard */,
 				08ACB51725CB47E5005469E9 /* Profile.storyboard */,
-				08ACB51A25CB480F005469E9 /* Schedule.storyboard */,
-				08ACB51D25CB482A005469E9 /* Enrollment.storyboard */,
+				08ACB51A25CB480F005469E9 /* Enrollment.storyboard */,
+				08ACB51D25CB482A005469E9 /* Schedule.storyboard */,
 				08ACB55925CDEA22005469E9 /* Login.storyboard */,
 			);
 			path = Views;
@@ -276,8 +276,8 @@
 				08C6ADF425C3A89E00EDA9BC /* Assets.xcassets in Resources */,
 				AFE71ECF25CD3EE200DA64CB /* Montserrat-Bold.ttf in Resources */,
 				AFE71ED225CD3F0200DA64CB /* Montserrat-SemiBold.ttf in Resources */,
-				08ACB51E25CB482A005469E9 /* Enrollment.storyboard in Resources */,
-				08ACB51B25CB480F005469E9 /* Schedule.storyboard in Resources */,
+				08ACB51E25CB482A005469E9 /* Schedule.storyboard in Resources */,
+				08ACB51B25CB480F005469E9 /* Enrollment.storyboard in Resources */,
 				08ACB55A25CDEA22005469E9 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

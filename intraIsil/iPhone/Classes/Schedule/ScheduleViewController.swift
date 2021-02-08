@@ -8,22 +8,19 @@
 import UIKit
 
 class ScheduleViewController: UIViewController {
-
+    @IBOutlet weak var switchCourses: UISwitch!
+    @IBOutlet weak var buttonCourses: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        buttonCourses.isHidden = true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func hiddenButtonCourse(_ sender: Any) {
+        if switchCourses.isOn{
+            buttonCourses.isHidden = false
+        }else{
+            buttonCourses.isHidden = true
+        }
     }
-    */
-
 }
