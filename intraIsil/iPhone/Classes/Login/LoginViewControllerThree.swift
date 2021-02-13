@@ -15,8 +15,8 @@ class LoginViewControllerThree: UIViewController {
     @IBOutlet weak var userLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var textButton: UIButton!
-    @IBOutlet weak var inputDNI: UITextField!
     @IBOutlet weak var inputPassword: UITextField!
+    @IBOutlet weak var inputConfirmedPassword: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

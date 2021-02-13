@@ -22,11 +22,11 @@ class LoginViewController: UIViewController {
 
         // add custom fonts
         
-        textTitleLabel.font = UIFont(name: "Montserrat-Bold", size: 22)
-        userLabel.font = UIFont(name: "Montserrat-Bold", size: 18)
-        passwordLabel.font = UIFont(name: "Montserrat-Bold", size: 18)
-        textButton.titleLabel!.font = UIFont(name: "Montserrat-Bold", size: 20)
-        
+//        textTitleLabel.font = UIFont(name: "Montserrat-Bold", size: 22)
+//        userLabel.font = UIFont(name: "Montserrat-Bold", size: 18)
+//        passwordLabel.font = UIFont(name: "Montserrat-Bold", size: 18)
+//        textButton.titleLabel!.font = UIFont(name: "Montserrat-Bold", size: 20)
+//        
         /*
         inputDNI.borderStyle = .none
         inputDNI.layer.cornerRadius = 25.0
