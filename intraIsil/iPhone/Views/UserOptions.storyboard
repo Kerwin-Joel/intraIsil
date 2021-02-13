@@ -66,6 +66,9 @@
 ( Vizualizar horario del ciclo )</string>
                                     <color key="titleColor" name="text.description"/>
                                 </state>
+                                <connections>
+                                    <segue destination="SCr-Mo-d12" kind="show" id="rxJ-ll-YTr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EXZ-YC-DYf">
                                 <rect key="frame" x="20" y="359" width="374" height="100"/>
@@ -78,6 +81,9 @@
 ( Información sobre el alumno )</string>
                                     <color key="titleColor" name="text.description"/>
                                 </state>
+                                <connections>
+                                    <segue destination="l7x-RV-bMF" kind="show" id="ELY-rZ-hxI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perfil Usuario - Pantalla principal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4f-YS-Xfu">
                                 <rect key="frame" x="20" y="103" width="248" height="20.5"/>
@@ -169,6 +175,26 @@
             </objects>
             <point key="canvasLocation" x="558" y="82"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="jFD-t2-eKe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="l7x-RV-bMF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VMD-pj-8Bo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q9m-sZ-TpA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="-96"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="Kn6-kl-Zd1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Schedule" id="SCr-Mo-d12" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="N6J-Wl-VIu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCm-r1-Dqp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1218" y="82"/>
+        </scene>
         <!--Enrollment-->
         <scene sceneID="jQn-h7-f9X">
             <objects>
@@ -177,7 +203,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tgz-5y-k7O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="495"/>
+            <point key="canvasLocation" x="1223" y="246"/>
         </scene>
     </scenes>
     <resources>
