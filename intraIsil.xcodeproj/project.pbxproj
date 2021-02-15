@@ -24,6 +24,8 @@
 		08C6ADEF25C3A89C00EDA9BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C6ADEE25C3A89C00EDA9BC /* ViewController.swift */; };
 		08C6ADF425C3A89E00EDA9BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C6ADF325C3A89E00EDA9BC /* Assets.xcassets */; };
 		08C6ADF725C3A89E00EDA9BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C6ADF525C3A89E00EDA9BC /* LaunchScreen.storyboard */; };
+		55BE0E7F25D9E80300FEA4F1 /* Relleno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BE0E7E25D9E80300FEA4F1 /* Relleno.swift */; };
+		55BE0E8325D9EBB800FEA4F1 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BE0E8225D9EBB800FEA4F1 /* ScheduleTableViewCell.swift */; };
 		AF699D5225CD7D7E00B4BF27 /* LoginDesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF699D5125CD7D7E00B4BF27 /* LoginDesignableView.swift */; };
 		AF699D5A25CDAD7200B4BF27 /* LoginViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF699D5925CDAD7200B4BF27 /* LoginViewControllerTwo.swift */; };
 		AF699D5E25CDAD8500B4BF27 /* LoginViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF699D5D25CDAD8500B4BF27 /* LoginViewControllerThree.swift */; };
@@ -52,6 +54,8 @@
 		08C6ADF325C3A89E00EDA9BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08C6ADF625C3A89E00EDA9BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08C6ADF825C3A89E00EDA9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55BE0E7E25D9E80300FEA4F1 /* Relleno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relleno.swift; sourceTree = "<group>"; };
+		55BE0E8225D9EBB800FEA4F1 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		AF699D5125CD7D7E00B4BF27 /* LoginDesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDesignableView.swift; sourceTree = "<group>"; };
 		AF699D5925CDAD7200B4BF27 /* LoginViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTwo.swift; sourceTree = "<group>"; };
 		AF699D5D25CDAD8500B4BF27 /* LoginViewControllerThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerThree.swift; sourceTree = "<group>"; };
@@ -159,7 +163,9 @@
 		08ACB52525CB4959005469E9 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				55BE0E7825D9E7D500FEA4F1 /* BE */,
 				08ACB54525CB5358005469E9 /* ScheduleViewController.swift */,
+				55BE0E8225D9EBB800FEA4F1 /* ScheduleTableViewCell.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -202,6 +208,14 @@
 				08C6ADF825C3A89E00EDA9BC /* Info.plist */,
 			);
 			path = intraIsil;
+			sourceTree = "<group>";
+		};
+		55BE0E7825D9E7D500FEA4F1 /* BE */ = {
+			isa = PBXGroup;
+			children = (
+				55BE0E7E25D9E80300FEA4F1 /* Relleno.swift */,
+			);
+			path = BE;
 			sourceTree = "<group>";
 		};
 		AFE71ECD25CD3E8500DA64CB /* Fonts */ = {
@@ -300,6 +314,8 @@
 				AF699D5225CD7D7E00B4BF27 /* LoginDesignableView.swift in Sources */,
 				AF699D5E25CDAD8500B4BF27 /* LoginViewControllerThree.swift in Sources */,
 				08ACB53E25CB5339005469E9 /* UserOptionsViewController.swift in Sources */,
+				55BE0E8325D9EBB800FEA4F1 /* ScheduleTableViewCell.swift in Sources */,
+				55BE0E7F25D9E80300FEA4F1 /* Relleno.swift in Sources */,
 				08C6ADED25C3A89C00EDA9BC /* SceneDelegate.swift in Sources */,
 				08ACB54225CB534B005469E9 /* ProfileViewController.swift in Sources */,
 			);

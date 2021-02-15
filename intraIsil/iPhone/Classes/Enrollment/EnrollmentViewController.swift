@@ -9,10 +9,15 @@ import UIKit
 
 class EnrollmentViewController: UIViewController {
 
-    @IBOutlet weak var TitleLabel: UILabel!
-    @IBOutlet weak var CursosButton: UIButton!
-    @IBOutlet weak var SwitchCursos: UISwitch!
     
+    @IBOutlet weak var lblTitleLabel: UILabel!
+    @IBOutlet weak var btnCursos: UIButton!
+    @IBOutlet weak var switchAceptar: UISwitch!
+    
+    
+    @IBAction func btnBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +25,12 @@ class EnrollmentViewController: UIViewController {
     
 
     @IBAction func SwitchAceptarM(_ sender: Any) {
-        if SwitchCursos .isOn == true{
-            TitleLabel.text = "TU MATRICULA A SIDO ACTIVADA"
-            CursosButton.isHidden = false
+        if switchAceptar.isOn == true{
+            lblTitleLabel.text = "TU MATRICULA A SIDO ACTIVADA"
+            btnCursos.isHidden = false
         } else {
-            TitleLabel.text = "¿Aceptas el reglamento de matricula?"
-            CursosButton.isHidden = true
+            lblTitleLabel.text = "¿Aceptas el reglamento de matricula?"
+            btnCursos.isHidden = true
         }
     }
     
