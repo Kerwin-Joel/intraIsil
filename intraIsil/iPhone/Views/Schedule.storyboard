@@ -137,7 +137,7 @@
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="isilLogo" width="500" height="500"/>
         <namedColor name="background.main">
-            <color red="0.0" green="0.69199997186660767" blue="0.94999998807907104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

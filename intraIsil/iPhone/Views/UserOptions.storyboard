@@ -56,7 +56,7 @@
                                             <color key="titleColor" name="text.description"/>
                                         </state>
                                         <connections>
-                                            <segue destination="l7x-RV-bMF" kind="show" id="ELY-rZ-hxI"/>
+                                            <segue destination="l7x-RV-bMF" kind="show" id="Wz5-rs-Cl9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="0A7-FU-RoN">
@@ -69,7 +69,7 @@
                                             <color key="titleColor" name="text.description"/>
                                         </state>
                                         <connections>
-                                            <segue destination="uZh-Tb-Tsc" kind="show" id="DZe-sU-Zan"/>
+                                            <segue destination="uZh-Tb-Tsc" kind="show" id="LFj-gG-aNr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="eqm-eQ-bKZ" userLabel="Horario  ( Vizualizar horario del ciclo )">
@@ -82,7 +82,7 @@
                                             <color key="titleColor" name="text.description"/>
                                         </state>
                                         <connections>
-                                            <segue destination="SCr-Mo-d12" kind="show" id="rxJ-ll-YTr"/>
+                                            <segue destination="SCr-Mo-d12" kind="show" id="wnG-sq-QoQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -230,7 +230,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCm-r1-Dqp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1218" y="82"/>
+            <point key="canvasLocation" x="1215" y="252"/>
         </scene>
         <!--Enrollment-->
         <scene sceneID="jQn-h7-f9X">
@@ -240,13 +240,13 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tgz-5y-k7O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1223" y="246"/>
+            <point key="canvasLocation" x="1184" y="68"/>
         </scene>
     </scenes>
     <resources>
         <image name="user" width="564" height="704"/>
         <namedColor name="background.main">
-            <color red="0.0" green="0.69199997186660767" blue="0.94999998807907104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="button.Selected">
             <color red="0.072999998927116394" green="0.68500000238418579" blue="0.27599999308586121" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

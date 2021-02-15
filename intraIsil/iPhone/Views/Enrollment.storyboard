@@ -401,14 +401,13 @@ PARA IPHONE </string>
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="mAz-7o-OOo" kind="show" id="jLg-QX-KRh"/>
+                                            <segue destination="mAz-7o-OOo" kind="show" id="ZyS-fp-uSk"/>
                                         </connections>
                                     </button>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MYZ-jM-Txt">
                                         <rect key="frame" x="182.5" y="567" width="51" height="31"/>
                                         <connections>
-                                            <action selector="SwitchAceptarM:" destination="AI1-kx-0Zs" eventType="valueChanged" id="XZc-kJ-d2A"/>
-                                            <action selector="changeSwitch:" destination="AI1-kx-0Zs" eventType="valueChanged" id="1m4-aX-um4"/>
+                                            <action selector="SwitchAceptarM:" destination="AI1-kx-0Zs" eventType="valueChanged" id="BW6-8s-Bnf"/>
                                         </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿ACEPTAS EL REGLAMENTO DE MATRICULA?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdF-qc-dzQ">
@@ -477,11 +476,9 @@ PARA IPHONE </string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="CursosButton" destination="gzr-98-Umj" id="Rpn-Jc-9ty"/>
-                        <outlet property="Switch" destination="MYZ-jM-Txt" id="j41-ZN-vyl"/>
-                        <outlet property="btnCursos" destination="gzr-98-Umj" id="GGb-dL-bjf"/>
+                        <outlet property="btnCursos" destination="gzr-98-Umj" id="T7E-nO-6Uq"/>
                         <outlet property="lblTitleLabel" destination="rdF-qc-dzQ" id="7Gt-X2-bAR"/>
-                        <outlet property="switchAceptar" destination="MYZ-jM-Txt" id="0r1-Nv-8UT"/>
+                        <outlet property="switchAceptar" destination="MYZ-jM-Txt" id="Ns7-31-g8f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qpX-eU-Yd0" sceneMemberID="firstResponder"/>
