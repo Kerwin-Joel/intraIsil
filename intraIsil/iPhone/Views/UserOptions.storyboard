@@ -48,7 +48,6 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EXZ-YC-DYf">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="109"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.1321154447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal">
                                             <string key="title">Perfil 
@@ -74,7 +73,6 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="eqm-eQ-bKZ" userLabel="Horario  ( Vizualizar horario del ciclo )">
                                         <rect key="frame" x="0.0" y="233.6666666666666" width="374" height="121.66666666666666"/>
-                                        <color key="backgroundColor" name="button.Selected"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal">
                                             <string key="title">Horario
@@ -247,9 +245,6 @@
         <image name="user" width="564" height="704"/>
         <namedColor name="background.main">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="button.Selected">
-            <color red="0.072999998927116394" green="0.68500000238418579" blue="0.27599999308586121" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="text.Button.Select">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
