@@ -89,11 +89,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiP-ff-Xq6">
-                                <rect key="frame" x="56" y="123" width="303" height="97"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="97" id="Gbq-6V-Jh3"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiP-ff-Xq6">
+                                <rect key="frame" x="0.0" y="105" width="414" height="57.5"/>
                                 <string key="text">APLICACIONES MOVILES
 PARA IPHONE </string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -120,13 +117,13 @@ PARA IPHONE </string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bloques disponibles: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51a-PG-Ja6">
-                                <rect key="frame" x="30" y="230" width="354" height="21"/>
+                                <rect key="frame" x="30" y="172.5" width="354" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eHf-Rk-mGm">
-                                <rect key="frame" x="0.0" y="251" width="414" height="524"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eHf-Rk-mGm">
+                                <rect key="frame" x="0.0" y="193.5" width="414" height="581.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -135,25 +132,27 @@ PARA IPHONE </string>
                         <constraints>
                             <constraint firstItem="5w1-r6-LiC" firstAttribute="leading" secondItem="so7-vS-aOG" secondAttribute="leading" id="1Ee-wK-beN"/>
                             <constraint firstItem="5w1-r6-LiC" firstAttribute="trailing" secondItem="so7-vS-aOG" secondAttribute="trailing" id="2Y1-sE-sHN"/>
-                            <constraint firstItem="51a-PG-Ja6" firstAttribute="top" secondItem="jiP-ff-Xq6" secondAttribute="bottom" constant="10" id="2qM-nL-qR1"/>
+                            <constraint firstItem="jiP-ff-Xq6" firstAttribute="top" secondItem="zAz-I9-Eyr" secondAttribute="bottom" constant="20" id="8FC-PY-rAN"/>
                             <constraint firstItem="eHf-Rk-mGm" firstAttribute="leading" secondItem="so7-vS-aOG" secondAttribute="leading" id="Fdz-u1-I1y"/>
                             <constraint firstItem="zAz-I9-Eyr" firstAttribute="leading" secondItem="so7-vS-aOG" secondAttribute="leading" constant="20" id="FjR-ZA-hND"/>
                             <constraint firstItem="5w1-r6-LiC" firstAttribute="top" secondItem="eHf-Rk-mGm" secondAttribute="bottom" constant="10" id="Ioo-rD-o2K"/>
                             <constraint firstItem="51a-PG-Ja6" firstAttribute="leading" secondItem="so7-vS-aOG" secondAttribute="leading" constant="30" id="JgJ-cA-gdh"/>
-                            <constraint firstItem="jiP-ff-Xq6" firstAttribute="top" secondItem="zAz-I9-Eyr" secondAttribute="bottom" constant="38" id="WmL-pS-M7R"/>
                             <constraint firstItem="eHf-Rk-mGm" firstAttribute="top" secondItem="51a-PG-Ja6" secondAttribute="bottom" id="axg-EJ-3CN"/>
                             <constraint firstItem="eHf-Rk-mGm" firstAttribute="trailing" secondItem="so7-vS-aOG" secondAttribute="trailing" id="dfa-II-7FW"/>
                             <constraint firstItem="so7-vS-aOG" firstAttribute="trailing" secondItem="zAz-I9-Eyr" secondAttribute="trailing" constant="110" id="egR-Cq-MNU"/>
                             <constraint firstAttribute="bottom" secondItem="5w1-r6-LiC" secondAttribute="bottom" id="fFe-fb-2H2"/>
                             <constraint firstItem="so7-vS-aOG" firstAttribute="trailing" secondItem="51a-PG-Ja6" secondAttribute="trailing" constant="30" id="fUn-e7-6F3"/>
-                            <constraint firstItem="so7-vS-aOG" firstAttribute="trailing" secondItem="jiP-ff-Xq6" secondAttribute="trailing" constant="55" id="iOp-uC-mg4"/>
+                            <constraint firstItem="51a-PG-Ja6" firstAttribute="top" secondItem="jiP-ff-Xq6" secondAttribute="bottom" constant="10" id="jw3-aM-SYn"/>
+                            <constraint firstItem="so7-vS-aOG" firstAttribute="trailing" secondItem="jiP-ff-Xq6" secondAttribute="trailing" id="l8r-e1-do7"/>
+                            <constraint firstItem="jiP-ff-Xq6" firstAttribute="leading" secondItem="so7-vS-aOG" secondAttribute="leading" id="lIe-Bs-nIq"/>
+                            <constraint firstItem="jiP-ff-Xq6" firstAttribute="centerX" secondItem="Phe-N7-253" secondAttribute="centerX" id="m5c-CI-cu3"/>
                             <constraint firstItem="zAz-I9-Eyr" firstAttribute="top" secondItem="so7-vS-aOG" secondAttribute="top" constant="20" id="qGI-mN-1k4"/>
-                            <constraint firstItem="jiP-ff-Xq6" firstAttribute="leading" secondItem="so7-vS-aOG" secondAttribute="leading" constant="56" id="zoz-3Z-1DX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XQd-8K-5Nf"/>
                     <connections>
                         <outlet property="tableView" destination="eHf-Rk-mGm" id="8ni-KP-7zP"/>
+                        <outlet property="titleCourse" destination="jiP-ff-Xq6" id="8es-du-DBo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9N-Xy-eDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -32,8 +32,8 @@
 		0868DD2D25DA16270001F127 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0868DD1625DA16270001F127 /* IQKeyboardManager+UITextFieldViewNotification.swift */; };
 		0868DD3225DB17DE0001F127 /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0868DD3025DB17DE0001F127 /* MyCustomTableViewCell.swift */; };
 		0868DD3325DB17DE0001F127 /* MyCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0868DD3125DB17DE0001F127 /* MyCustomTableViewCell.xib */; };
-		087CEB2225DB90DD00B6EF05 /* BlockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CEB2025DB90DD00B6EF05 /* BlockTableViewCell.swift */; };
-		087CEB2325DB90DD00B6EF05 /* BlockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 087CEB2125DB90DD00B6EF05 /* BlockTableViewCell.xib */; };
+		087CEB2B25DC20CA00B6EF05 /* BlockListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CEB2925DC20CA00B6EF05 /* BlockListTableViewCell.swift */; };
+		087CEB2C25DC20CA00B6EF05 /* BlockListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 087CEB2A25DC20CA00B6EF05 /* BlockListTableViewCell.xib */; };
 		08ACB51525CB47C1005469E9 /* UserOptions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ACB51425CB47C1005469E9 /* UserOptions.storyboard */; };
 		08ACB51825CB47E5005469E9 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ACB51725CB47E5005469E9 /* Profile.storyboard */; };
 		08ACB51B25CB480F005469E9 /* Enrollment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08ACB51A25CB480F005469E9 /* Enrollment.storyboard */; };
@@ -87,8 +87,8 @@
 		0868DD1625DA16270001F127 /* IQKeyboardManager+UITextFieldViewNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+UITextFieldViewNotification.swift"; sourceTree = "<group>"; };
 		0868DD3025DB17DE0001F127 /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
 		0868DD3125DB17DE0001F127 /* MyCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomTableViewCell.xib; sourceTree = "<group>"; };
-		087CEB2025DB90DD00B6EF05 /* BlockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTableViewCell.swift; sourceTree = "<group>"; };
-		087CEB2125DB90DD00B6EF05 /* BlockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlockTableViewCell.xib; sourceTree = "<group>"; };
+		087CEB2925DC20CA00B6EF05 /* BlockListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockListTableViewCell.swift; sourceTree = "<group>"; };
+		087CEB2A25DC20CA00B6EF05 /* BlockListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlockListTableViewCell.xib; sourceTree = "<group>"; };
 		08ACB50D25CB3E7E005469E9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = ../../../../../Documents/arquitectura/Sesion06/Sesion06/iPhone/Resources/Colors.xcassets; sourceTree = "<group>"; };
 		08ACB51425CB47C1005469E9 /* UserOptions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserOptions.storyboard; sourceTree = "<group>"; };
 		08ACB51725CB47E5005469E9 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -206,8 +206,8 @@
 		087CEB1E25DB8FC400B6EF05 /* listBlock */ = {
 			isa = PBXGroup;
 			children = (
-				087CEB2025DB90DD00B6EF05 /* BlockTableViewCell.swift */,
-				087CEB2125DB90DD00B6EF05 /* BlockTableViewCell.xib */,
+				087CEB2925DC20CA00B6EF05 /* BlockListTableViewCell.swift */,
+				087CEB2A25DC20CA00B6EF05 /* BlockListTableViewCell.xib */,
 			);
 			path = listBlock;
 			sourceTree = "<group>";
@@ -433,7 +433,7 @@
 				0868DD3325DB17DE0001F127 /* MyCustomTableViewCell.xib in Resources */,
 				08ACB51E25CB482A005469E9 /* Schedule.storyboard in Resources */,
 				08ACB51B25CB480F005469E9 /* Enrollment.storyboard in Resources */,
-				087CEB2325DB90DD00B6EF05 /* BlockTableViewCell.xib in Resources */,
+				087CEB2C25DC20CA00B6EF05 /* BlockListTableViewCell.xib in Resources */,
 				08ACB55A25CDEA22005469E9 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0868DD2525DA16270001F127 /* IQKeyboardManager+Debug.swift in Sources */,
+				087CEB2B25DC20CA00B6EF05 /* BlockListTableViewCell.swift in Sources */,
 				08ACB54A25CB5368005469E9 /* EnrollmentViewController.swift in Sources */,
 				AF699D5A25CDAD7200B4BF27 /* LoginViewControllerTwo.swift in Sources */,
 				0868DD2325DA16270001F127 /* IQKeyboardReturnKeyHandler.swift in Sources */,
@@ -470,7 +471,6 @@
 				08ACB54625CB5358005469E9 /* ScheduleViewController.swift in Sources */,
 				AF699D5225CD7D7E00B4BF27 /* LoginDesignableView.swift in Sources */,
 				AF699D5E25CDAD8500B4BF27 /* LoginViewControllerThree.swift in Sources */,
-				087CEB2225DB90DD00B6EF05 /* BlockTableViewCell.swift in Sources */,
 				08ACB53E25CB5339005469E9 /* UserOptionsViewController.swift in Sources */,
 				0868DD1B25DA16270001F127 /* IQBarButtonItem.swift in Sources */,
 				0868DD2925DA16270001F127 /* IQUIViewController+Additions.swift in Sources */,

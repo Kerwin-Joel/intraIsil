@@ -55,7 +55,11 @@ extension CourseViewController : UITableViewDelegate{
         selectedCell.contentView.backgroundColor = UIColor.white
         
         let vc = storyboard?.instantiateViewController(identifier: "cursos") as? ListCurseViewController
+        vc?.name = courses[indexPath.row]
+        
+        
         self.navigationController?.pushViewController(vc!, animated: true)
+        
         
         print("tocado")
     }
