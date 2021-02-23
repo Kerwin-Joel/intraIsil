@@ -1,0 +1,6 @@
+framework module Pods_intraIsil {
+  umbrella header "Pods-intraIsil-umbrella.h"
+
+  export *
+  module * { export * }
+}
