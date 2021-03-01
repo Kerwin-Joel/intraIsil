@@ -188,8 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				AF699D5125CD7D7E00B4BF27 /* LoginDesignableView.swift */,
-				08ACB53925CB5300005469E9 /* LoginViewController.swift */,
 				AF699D5925CDAD7200B4BF27 /* LoginViewControllerTwo.swift */,
+				08ACB53925CB5300005469E9 /* LoginViewController.swift */,
 				AF699D5D25CDAD8500B4BF27 /* LoginViewControllerThree.swift */,
 			);
 			path = Login;

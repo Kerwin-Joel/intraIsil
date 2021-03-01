@@ -184,6 +184,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="forgotYouPassword:" destination="s2L-Af-UaQ" eventType="touchUpInside" id="LQr-L3-LLv"/>
+                                                    <segue destination="nJd-H4-9rp" kind="show" id="NiI-CA-bB8"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -309,7 +310,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F. Nacimiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjY-gR-rXl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjY-gR-rXl">
                                         <rect key="frame" x="0.0" y="325.5" width="355" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" name="text.Button.Select"/>
@@ -321,7 +322,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1f-KB-2b4" customClass="LoginDesignableView" customModule="intraIsil" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="359.5" width="355" height="50"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="10/10/20" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WYx-EP-FUD">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Usuario" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WYx-EP-FUD">
                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -437,6 +438,9 @@
                                                 <integer key="value" value="25"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="NextView:" destination="nJd-H4-9rp" eventType="touchUpInside" id="fhK-l8-l9S"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="background.main"/>
@@ -497,7 +501,7 @@
                         <outlet property="textButton" destination="s6P-jf-jdw" id="80X-aU-eH9"/>
                         <outlet property="textTitleLabel" destination="VNy-Ft-z9a" id="VKq-fS-YJU"/>
                         <outlet property="userLabel" destination="JFI-Ev-Gfs" id="D9l-cR-Pjm"/>
-                        <segue destination="Bpb-Vr-Vpz" kind="show" id="OLH-7A-0Ld"/>
+                        <segue destination="Bpb-Vr-Vpz" kind="show" identifier="NewPassword" id="OLH-7A-0Ld"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7HY-sl-nuh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -727,6 +731,9 @@
             <point key="canvasLocation" x="575.36231884057975" y="166.30434782608697"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="NiI-CA-bB8"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="isilLogo" width="500" height="500"/>
         <namedColor name="background.main">

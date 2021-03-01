@@ -7,9 +7,9 @@
 
 
 import UIKit
+import Firebase
 
 class LoginViewControllerTwo: UIViewController {
-
     
     @IBOutlet weak var textTitleLabel: UILabel!
     @IBOutlet weak var userLabel: UILabel!
@@ -36,6 +36,10 @@ class LoginViewControllerTwo: UIViewController {
         inputPassword.layer.cornerRadius = 25.0
         inputPassword.layer.masksToBounds = true
          */
+        
+        
+        
+        
      }
     
     @IBAction func clickBtnBack(_ sender: Any) {
@@ -44,16 +48,22 @@ class LoginViewControllerTwo: UIViewController {
 
     @IBAction func NextView(_ sender: Any) {
         
+        let db = Firestore.firestore()
         
+        db.collection("user").document(inputPassword.text!).addSnapshotListener { documentSnapshot, error in
+            print("entro en el user ")
+                if let document = documentSnapshot, error == nil {
+                    print("entro en el document")
+                    if let dni = document.get("DNI") as? String {
+                        print("entro en el dni")
+                        if dni == self.inputDNI.text! {
+                            self.performSegue(withIdentifier: "NewPassword", sender: nil)
+                        }
+                    }
+                }
+            }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    
 
 }
