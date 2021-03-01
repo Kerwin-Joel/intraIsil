@@ -11,14 +11,15 @@ import Firebase
 class CourseViewController: UIViewController, UITableViewDelegate{
  
     @IBOutlet weak var tableCourses: UITableView!
-    var database = Database.database().reference()
+    var database = Database.database().reference().child("IntraIsil")
     var arrayCourses =   [CourseBE]()
-    
+    var idCourse: String?
+    var nameCourse: String?
+    var nameTeacher: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //self.tableCourses.delegate = self
         self.tableCourses.delegate = self
         self.tableCourses.dataSource =  self
         self.cargarTabla()
@@ -26,21 +27,20 @@ class CourseViewController: UIViewController, UITableViewDelegate{
     
     func cargarTabla(){
         
-        database.child("IntraIsil").child("Cursos").observe(DataEventType.value, with: { (snapshot) in
+        self.database.child("Cursos").observe(DataEventType.value, with: { (snapshot) in
 
             if snapshot.childrenCount > 0 {
                 self.arrayCourses.removeAll()
 
                 for course in snapshot.children.allObjects as! [DataSnapshot] {
                     
-                    print("course", course)
                     let object = course.value as? [String: AnyObject]
-                    
                     let nombre  = object?["nombre"] as! String
-                    let profesor  = "\("Prof. ") \(object?["profesor"] as! String)"
+                    let profesor  = "Profesor: \(object?["profesor"] as! String)"
                     let urlImage  = object?["urlImage"] as! String
+                    let idCourse  = course.key
  
-                    let course = CourseBE(idCourse: "", urlImage: urlImage, name: nombre, teacher: profesor)
+                    let course = CourseBE(idCourse: idCourse, urlImage: urlImage, name: nombre, teacher: profesor)
 
                     self.arrayCourses.append(course)
                 }
@@ -48,7 +48,6 @@ class CourseViewController: UIViewController, UITableViewDelegate{
                 DispatchQueue.main.async {
                     self.tableCourses.reloadData()
                 }
-                //self.tableCourses.reloadData()
             }
         })
         
@@ -58,19 +57,10 @@ class CourseViewController: UIViewController, UITableViewDelegate{
 }
 
 
-/*extension CourseViewController: CourseTableViewCellDelegate {
-    func CourseTableViewCell(_ cell: CourseTableViewCell, deletePlace place: CourseBE) {
-        print("sssss  ====> extension CourseViewController")
-        self.showAlertWithTitle("Eliminar", message: "¿Deseas eliminar este lugar?", acceptButton: "Aceptar", cancelButton: "Cancelar", acceptHandler: {
-            print("Eliminaaaaar")
-        }, cancelHandler: nil)
-    }
-}*/
 
 extension CourseViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        print("ddddd")
         return 1
     }
 
@@ -82,17 +72,51 @@ extension CourseViewController: UITableViewDataSource {
         let cellIdentifier = "CourseTableViewCell"
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CourseTableViewCell
-        //cell.delegate = self
         cell.obj = self.arrayCourses[indexPath.row]
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("indexPath.row", indexPath.row)
-        let objPlace = self.arrayCourses[indexPath.row]
-        print("objPlace ===>", objPlace)
-        self.performSegue(withIdentifier: "ListCurseViewController", sender: objPlace)
+        let obj = self.arrayCourses[indexPath.row]
+        
+        self.idCourse = obj.idCourse
+        self.nameCourse = obj.name
+        self.nameTeacher = obj.teacher
+        
+        /*
+         self.database.child("IntraIsil").child("Cursos").child(obj.idCourse).observe(.value, with: { (snapshot) in
+             let media = snapshot.value as! [String : Any]
+             //print("media media ===>", media["detalles"] as Any)
+             for childSnapshot in media["detalles"] as! JSON {
+                 print("ffffffffffff ===>", childSnapshot)
+                 //let course = ScheduleBE(json: childSnapshot as! JSON)
+
+             }
+             
+         })
+         */
+        
+        /*let storyboard = UIStoryboard(name: "Enrollment", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "ListSchedure") as! ListCourseViewController{
+            controller.uid = self.uid
+        }
+
+        self.present(controller, animated: true, completion: nil)*/
+        //var controller = storyboard.instantiateViewControllerWithIdentifier("ListSchedure") as! ListCourseViewController
+        //self.presentViewController(controller, animated: true, completion: nil)
+        
+        self.performSegue(withIdentifier: "ListSchedure", sender: obj)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "ListSchedure"{
+                if let destino = segue.destination as? ListCourseViewController{
+                    destino.idCourse = self.idCourse
+                    destino.nameCourse = self.nameCourse
+                    destino.nameTeacher = self.nameTeacher
+                }
+            }
     }
 
 }

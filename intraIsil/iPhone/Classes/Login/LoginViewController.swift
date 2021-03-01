@@ -25,6 +25,8 @@ class LoginViewController: UIViewController {
 //        self.validateCurrentLogin()
         self.inputDNI.text = "antonyhuallullo@gmail.com"
         self.inputPassword.text = "12345678"
+        //self.inputDNI.text = "isil@gmail.com"
+        //self.inputPassword.text = "12345678"
 
      }
     
@@ -47,9 +49,6 @@ class LoginViewController: UIViewController {
 //
     
     @IBAction func login(_ sender: UIButton) {
-        //let nextViewController = UserOptionsViewController() as UIViewController
-          //self.navigationController?.pushViewController(nextViewController, animated: true)
-        
         let user = self.inputDNI.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = self.inputPassword.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         var msj: String = ""
@@ -68,8 +67,6 @@ class LoginViewController: UIViewController {
                 
                 if error == nil {
                     self?.performSegue(withIdentifier: "UserOptions", sender: self)
-                    //let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
-                    //self.present(vc!, animated: true, completion: nil)
                 } else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     

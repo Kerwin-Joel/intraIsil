@@ -34,27 +34,15 @@ class ProfileViewController: UIViewController {
         let currentUser = Auth.auth().currentUser
         self.database.child("IntraIsil").child("Usuario").queryOrdered(byChild:  "id").queryStarting(atValue: currentUser?.uid)
             .observeSingleEvent(of: .childAdded, with: { (snapshot: DataSnapshot) in
-            /*var user = User()
-            var users = [User]()
-            for u in snapshot.children{
-                user.name = u.value!["name"] as? String
-                ...
-                users.append(user)
-            }
-            self.users = users*/
+
             
             let user = snapshot.value as! [String: AnyObject]
-                print("mmmmm", user)
-            //var profile = ProfileModel(json: dictJSON)
-                
-                self.fullName.text = "\(user["nombre"] as? String ?? "") \(user["apellidos"] as? String ?? "")"
-                self.dni.text = user["dni"] as? String ?? ""
-                self.profession.text = user["profesion"] as? String ?? ""
-                self.birthdate.text = user["fecha_nacimiento"] as? String ?? ""
-                self.direction.text = user["direccion"] as? String ?? ""
-                self.email.text = user["email"] as? String ?? ""
-                
-             
+            self.fullName.text = "\(user["nombre"] as? String ?? "") \(user["apellidos"] as? String ?? "")"
+            self.dni.text = user["dni"] as? String ?? ""
+            self.profession.text = user["profesion"] as? String ?? ""
+            self.birthdate.text = user["fecha_nacimiento"] as? String ?? ""
+            self.direction.text = user["direccion"] as? String ?? ""
+            self.email.text = user["email"] as? String ?? ""
         })
     }
     
